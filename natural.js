@@ -2,8 +2,8 @@ var natural = require('natural');
 
 // Tokenization
 var tokenizer = new natural.WordTokenizer();
-console.log(tokenizer.tokenize("Hola mi nombre es michel"));
-var ex = "Hola, yo quiero un café, un pan, un huevo y un té";
+var ex = "Hola! mi nombre es michel. ¿Cuál es tu nombre?";
+console.log(tokenizer.tokenize(ex));
 console.log(ex.split(" "));
 
 var regTokenizer = new natural.RegexpTokenizer({ pattern: /\-/ });
